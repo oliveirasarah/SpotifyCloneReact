@@ -1,0 +1,74 @@
+.main {
+  max-width: 100vw;
+  height: 100vh;
+  margin-left: 14.6rem;
+}
+
+.playlist-result {
+  height: 70vh;
+  padding-top: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #121212;
+
+  &__header {
+    background-color: #242424;
+    color: #b3b3b3;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem 1rem;
+
+    #greeting {
+      color: var(--text-base-light);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .session {
+      color: var(--text-base-light);
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.offer {
+  max-height: 43vh;
+  margin: 24px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &__list-items {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    // display: grid;
+    // gap: 16px;
+    // grid-gap: 32px;
+    // margin: 0 auto;
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: auto;
+      width: 107px;
+      transform: rotate(25deg) translate(18%, -2%);
+    }
+  }
+}

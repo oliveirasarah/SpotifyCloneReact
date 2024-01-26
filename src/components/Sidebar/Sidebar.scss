@@ -1,0 +1,146 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0.5rem;
+
+  &__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+}
+
+.logo {
+  padding: 0.5rem;
+
+  img {
+    width: 80px;
+  }
+}
+
+.sidebar {
+  &__navigation ul {
+    padding: 0.5rem;
+
+    li {
+      padding: 10px 0;
+
+      .icon {
+        margin-right: 0.5rem;
+      }
+
+      a {
+        color: #b3b3b3;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 4px 8px;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 10px;
+
+    .icon {
+      font-size: 20px;
+      align-self: center;
+      margin-right: 10px;
+      padding-right: 8px;
+    }
+  }
+
+  .fa-plus {
+    margin: 5px;
+  }
+}
+
+.playlist {
+  height: 33vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #242424;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 8px 0;
+  padding: 16px 20px;
+  border-radius: 10px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    .text {
+      padding-bottom: 14px;
+      color: #fff;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 12px;
+    font-weight: 700;
+    width: 113px;
+  }
+
+  .title {
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.languages .languages__button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #878787;
+  color: #fff;
+  font-weight: bold;
+  width: 170px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 20px;
+}
